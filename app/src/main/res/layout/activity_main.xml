@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.happybirthday.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/vulcan"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:textColor="@color/switch_thumb_material_light"
+        android:textIsSelectable="false"
+        android:padding="20dp"
+        android:textStyle="bold|italic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anniversary"
+        android:id="@+id/textView1"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_light"
+        android:textIsSelectable="false"
+        android:padding="20dp"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="-50dp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="-50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:id="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_above="@+id/textView3"
+        android:textSize="24sp"
+        android:textColor="@color/secondary_text_default_material_dark"
+        android:padding="20dp"
+        android:layout_marginBottom="-40dp"
+        android:layout_marginRight="-50dp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yours"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_light"
+        android:padding="20dp"
+        android:textStyle="bold|italic"/>
+</RelativeLayout>
